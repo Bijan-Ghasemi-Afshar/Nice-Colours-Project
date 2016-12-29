@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Nice Colours (Fixing)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Style.css" />	
+</head>
+<body>
+	<!-- ******************************HEADER************************* -->
+	<div id="topPage">
+		<h1>Nice Colours</h1>
+		<div id="lines"></div>
+		<h2>Get nice matching colours based on colour theory <br/><span>Don't waste time on finding colours</span></h2>
+		<br/><br/>
+		<!-- <h3 id="pageWidth" style="text-align:center;" onload="getWidth()"></h3> -->
+	</div>	
+
+	<!-- *****************************MAIN BODY**************************************** -->
+	<div id="mainBody">
+		<div id="firstRow">
+			<!-- The Button -->
+			<div id="button"><button onclick="generateColours()" class="buttonStyle">Generate Colour</button></div>			
+			<!-- The Navigation -->
+			<div id="navBar">
+				<a href="#">Nice Colour Generator</a>
+				<a href="#">About</a>
+			</div>					
+			<!-- The Form -->
+			<div id="form">
+				<form action="#">
+					<input type="radio" value="Complementry" name="SchemeType" id="option1" checked /><label for="option1">Complementary Color Scheme (2 colours)</label><br/>
+					<input type="radio" value="Analogous" name="SchemeType" id="option2" /><label for="option2" >Analogous Color Scheme (3 colours)</label><br/>
+					<input type="radio" value="Triadic" name="SchemeType" id="option3" /><label for="option3">Triadic Color Scheme (3 colours)</label><br/>
+					<input type="radio" value="Split-Complementary" name="SchemeType" id="option4" /><label for="option4">Split-Complementary Color Scheme (3 colours)</label><br/>
+					<input type="radio" value="Rectangle" name="SchemeType" id="option5" /><label for="option5">Rectangle (tetradic) Color Scheme (4 colours)</label><br/>
+					<input type="radio" value="Square" name="SchemeType" id="option6" /><label for="option6">Square Color Scheme (4 colours)</label><br/>
+				</form>
+			</div>				
+		</div>		
+
+		<!-- *****************************************RESULT SECTION************************************ -->
+		<div id="resultSection">			
+			<!-- **********************THE BOX OF COLOURS -->
+			<div id="colourBox">
+				<div id="wrap">
+					<div class="littleBox " id="colour1"></div>					
+					<div class="littleBox " id="colour2"></div>					
+					<div class="littleBox " id="colour3"></div>					
+					<div class="littleBox " id="colour4"></div>					
+				</div>				
+			</div>
+
+			<div id="switchButton"><button class="buttonStyle" onclick="switchColours()">Switch</button></div>			<div class="break"></div>
+		</div>		
+										
+	</div>
+
+	<!-- *****************************THE EXAMPLE PAGE************************* -->	
+	<div id="exampleContainer">
+			<div id="website-example">
+
+				<h1 id="example1" class="noFloat">Heading</h1>
+				<h2 id="example2" class="noFloat">Heading 1</h2>
+				<p id="example3" class="noFloat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in erat sit amet dolor volutpat rhoncus vitae interdum lorem. Donec luctus nulla ornare diam feugiat eleifend. Etiam sed auctor nisl. Ut commodo massa dolor, vitae laoreet tortor convallis quis. In rhoncus magna sit amet rhoncus commodo. Integer sagittis, odio ut varius congue, orci nisi porta augue, et malesuada metus ligula nec ex. Etiam elit ante, rutrum vitae laoreet et, facilisis eget justo. In hac habitasse platea dictumst. Aenean sed mollis ante, a tristique lacus. Morbi in ultrices orci, ut congue enim. Sed ac quam et mauris dapibus volutpat. Sed fringilla tempus tellus, sit amet facilisis dui dignissim vitae. In ipsum dolor, molestie in libero in, tincidunt dictum turpis. Cras eros purus, scelerisque a ipsum eu, vehicula sagittis purus.</p>
+					
+			</div>
+		</div>
+
+<!-- ************************************************THE FOOTER*********************************** -->
+<div class="break"></div>
+<div id="footer">	
+	<hr />
+	<h5>Copyright &copy; 2016 Bijan G.A. All rights reserved.</h5>
+</div>
+
+
+
+<script type="text/javascript" src="js/App.js"></script>
+</body>
+</html>
